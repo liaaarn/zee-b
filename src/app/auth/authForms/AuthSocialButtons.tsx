@@ -1,11 +1,11 @@
-'use client'
+"use client";
 import CustomSocialButton from "@/app/components/forms/theme-elements/CustomSocialButton";
 import { Stack } from "@mui/system";
-import Avatar from '@mui/material/Avatar';
-import Box from '@mui/material/Box';
-import { signInType } from "@/app/(DashboardLayout)/types/auth/auth";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+// import { signInType } from "@/app/(DashboardLayout)/types/auth/auth";
 
-const AuthSocialButtons = ({ title }: signInType) => (
+const AuthSocialButtons = ({ title }: any) => (
   <>
     <Stack direction="row" justifyContent="center" spacing={2} mt={3}>
       <CustomSocialButton>

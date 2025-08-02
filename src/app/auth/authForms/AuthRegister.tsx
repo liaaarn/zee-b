@@ -1,16 +1,16 @@
-'use client'
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Divider from '@mui/material/Divider';
-import Typography from '@mui/material/Typography';
+"use client";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import CustomTextField from "@/app/components/forms/theme-elements/CustomTextField";
 import CustomFormLabel from "@/app/components/forms/theme-elements/CustomFormLabel";
 import { Stack } from "@mui/system";
-import { registerType } from "@/app/(DashboardLayout)/types/auth/auth";
+// import { registerType } from "@/app/(DashboardLayout)/types/auth/auth";
 import AuthSocialButtons from "./AuthSocialButtons";
 
-const AuthRegister = ({ title, subtitle, subtext }: registerType) => (
+const AuthRegister = ({ title, subtitle, subtext }: any) => (
   <>
     {title ? (
       <Typography fontWeight="700" variant="h3" mb={1}>

@@ -144,7 +144,7 @@ const Banner = () => {
                 sx={{
                   borderRadius: 4,
                   backgroundColor: (theme) => theme.palette.primary.light,
-                  height: 900, // ✅ diperbesar
+                  height: 900,
                   maxHeight: 720,
                   overflow: "hidden",
                   display: "flex",

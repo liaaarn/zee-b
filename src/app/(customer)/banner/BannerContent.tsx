@@ -8,7 +8,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled } from "@mui/material/styles";
 import { IconRocket } from "@tabler/icons-react";
 
-// third party
 import { motion } from "framer-motion";
 
 const StyledButton = styled(Button)(() => ({

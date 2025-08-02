@@ -104,7 +104,7 @@ import Navigation from "./layout/horizontal/navbar/Navigation";
 import HorizontalHeader from "./layout/horizontal/header/Header";
 import { useSelector } from "@/store/hooks";
 import { AppState } from "@/store/store";
-import { usePathname } from "next/navigation"; // ⬅️ Tambahkan ini
+import { usePathname } from "next/navigation";
 
 const MainWrapper = styled("div")(() => ({
   display: "flex",
@@ -127,15 +127,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const pathname = usePathname(); // ⬅️ Deteksi path
-  const isLandingPage = pathname === "/customer" || pathname === "/"; // ⬅️ Tambahkan kondisi ini
+  const pathname = usePathname();
+  const isLandingPage = pathname === "/customer" || pathname === "/";
 
   const [isSidebarOpen, setSidebarOpen] = useState(true);
   const [isMobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const customizer = useSelector((state: AppState) => state.customizer);
   const theme = useTheme();
 
-  // Jika halaman landing (customer), jangan tampilkan layout
   if (isLandingPage) {
     return <>{children}</>;
   }

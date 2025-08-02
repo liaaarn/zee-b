@@ -67,7 +67,6 @@ const LandingPage = () => {
   );
 };
 
-// ✅ Tandai bahwa page ini ingin sembunyikan layout
-(LandingPage as any).hidelayout = true;
+LandingPage.hidelayout = true;
 
 export default LandingPage;

@@ -1,3 +1,5 @@
+"use client";
+
 type Props = {
   description?: string;
   children: JSX.Element | JSX.Element[];
